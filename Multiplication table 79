@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,a;
+    scanf("%d",&n);
+    if((n>=1) && (n<=9)) { 
+      for(a=1;a<=n;a++)
+        {
+        int f = a * n;
+         printf("%d x %d = %d\n",n,a,f); 
+         }
+      }
+        else
+        {
+          printf("Invalid Input"); 
+        } 
+   return 0;
+}
