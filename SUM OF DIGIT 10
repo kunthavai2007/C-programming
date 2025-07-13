@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+   int a;
+    int sum=0;
+    scanf("%d",&a);
+    if(a >= 100)
+    { 
+      while(a>0)
+    {
+        int rem = a%10;
+        sum = sum+rem;
+        a = a/10;
+    }
+    printf("Sum of digit is %d",sum);
+    }
+    
+    else{
+        printf("Invalid Input");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
