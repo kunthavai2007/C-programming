@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num,i;
+     scanf("%d",&num);
+    int arr[num];
+    for (i=0;i<num;i++){
+          scanf("%d", &arr[i]);
+    }
+    int oddCount = 0;
+    int EvenCount = 0;
+    for (int i=0;i<num;i++){
+       if(arr[i]%2==0)
+        {   
+        EvenCount++;
+        }  
+        else{
+        oddCount++;    
+        }
+    }
+    if(EvenCount==num)
+    {
+        printf("Even");
+    }
+   else if(oddCount==num)
+   {
+       printf("Odd");
+   }
+    else
+    {
+        printf("Mixed");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
