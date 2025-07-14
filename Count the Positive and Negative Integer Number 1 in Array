@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int size;
+float poscount=0,negcount=0;
+    scanf("%d",&size);
+ int arr[size];
+    for(int i=0;i<size;i++)
+    { 
+    scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<size;i++)
+    {
+     if(arr[i]>0)
+     {
+      poscount++;
+     }
+    else if(arr[i]<0)
+    {
+     negcount++;   
+    }
+    }
+    printf("Count of Positive Integer is %.2f\n",poscount);
+    printf("Count of Negative Integer is %.2f",negcount);
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
